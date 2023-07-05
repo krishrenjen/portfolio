@@ -1,6 +1,7 @@
 "use client"
 import React, {useState, useEffect} from 'react'
 import GradientButton from '../Buttons/GradientButton';
+import HomePageCSS from "./HomePage.module.css"
 
 export default function NameHeader() {
     const headers = [
@@ -22,27 +23,27 @@ export default function NameHeader() {
     const buttons = [
         {
             content: "Projects",
-            href: "",
+            href: "/projects",
             gOverride: ""
         },
         {
             content: "Skills",
-            href: "",
+            href: "/skills",
             gOverride: ""
         },
         {
             content: "Blog",
-            href: "",
+            href: "/blog/list",
             gOverride: ""
         },
         {
             content: "Resume",
-            href: "",
+            href: "/resume",
             gOverride: ""
         },
         {
             content: "Contact Me",
-            href: "",
+            href: "/contact",
             gOverride: ""
         },
 
@@ -64,12 +65,15 @@ export default function NameHeader() {
 
     return (
         <div className="flex flex-col">
-            <h1 className="text-6xl flex font-title font-medium justify-center mb-5">Krish Renjen</h1>
-            <div className="flex gap-3 justify-center flex-wrap">
-                {headers.map((item, index) => (
-                    <span className={(index == currentIndex) ? (headersCSS + item.gradient) : headersCSS + "bg-white"}>{item.content}</span>
-                ))}
+            <div className={HomePageCSS.floatheader}>
+                <h1 className="text-6xl flex font-title font-medium justify-center mb-5">Krish Renjen</h1>
+                <div className="flex gap-3 justify-center flex-wrap">
+                    {headers.map((item, index) => (
+                        <span className={"py-1 " + ((index == currentIndex) ? (headersCSS + item.gradient) : headersCSS + "bg-white")}>{item.content}</span>
+                    ))}
+                </div>
             </div>
+            
             
             
             <div className="flex flex-row flex-wrap relative w-full gap-10 justify-center mt-20">

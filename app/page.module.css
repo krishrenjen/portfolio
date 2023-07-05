@@ -1,0 +1,8 @@
+.background-image{
+    display:flex;
+    flex-direction: row;
+    background-image: url("../public/spacebackground2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+}
