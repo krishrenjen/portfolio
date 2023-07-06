@@ -1,7 +1,9 @@
 "use client"
 import React, {useState, useEffect} from 'react'
 import GradientButton from '../Buttons/GradientButton';
-import HomePageCSS from "./HomePage.module.css"
+import HomePageCSS from "./HomePage.module.css";
+import { motion } from 'framer-motion';
+
 
 export default function NameHeader() {
     const headers = [
@@ -65,6 +67,7 @@ export default function NameHeader() {
 
     return (
         <div className="flex flex-col">
+            
             <div className={HomePageCSS.floatheader}>
                 <h1 className="text-6xl flex font-title font-medium justify-center mb-5">Krish Renjen</h1>
                 <div className="flex gap-3 justify-center flex-wrap">
@@ -76,12 +79,12 @@ export default function NameHeader() {
             
             
             
+            
             <div className="flex flex-row flex-wrap relative w-full gap-10 justify-center mt-20">
 
                 {buttons.map((item, index) => (
                     <GradientButton gradient={(item.gOverride == "" || item.gOverride == null) ? (headers.at(index % headers.length)?.gradient || "") : item.gOverride} content={item.content} href={item.href}></GradientButton>
                 ))}
-                
                 
             </div>
                      
