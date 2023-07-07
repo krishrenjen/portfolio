@@ -11,7 +11,6 @@ function Home() {
                     key="page"
                     initial="initialState"
                     animate="animateState"
-                    exit="exitState"
                     transition={{
                         duration: 1,
                     }}
@@ -21,9 +20,6 @@ function Home() {
                         },
                         animateState: {
                             opacity:1,
-                        },
-                        exitState:{
-                            opacity:0,
                         }
                     }}
                 >
