@@ -1,0 +1,22 @@
+{
+    "languages": [
+        {
+            "title":"Python",
+            "description":"Flask",
+            "image": "image file",
+            "primaryHref": "this is my href",
+            "links": [
+                {"text": "github repo", "href": "this is what is up"}
+            ]
+        },
+        {
+            "title":"Java",
+            "description":"Flask",
+            "image": "image file",
+            "primaryHref": "this is my href",
+            "links": [
+                {"text": "github repo", "href": "this is what is up"}
+            ]
+        }
+    ]
+}

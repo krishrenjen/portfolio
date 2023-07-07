@@ -1,10 +1,16 @@
 "use client"
-import HomePage from "@/components/HomePage/HomePage";
-import Navbar from "@/components/Navbar/Navbar";
+import SkillSection from "@/components/SkillSection/SkillSection";
+import { SkillTypes } from "@/common/enums/skilltypes";
 import { AnimatePresence, motion } from "framer-motion";
 
+export const metadata = {
+    title: 'Krish Renjen | Skills',
+    description: 'Krish Renjen - Skills',
+  }
+
 function Home() {
-    return (
+
+    return ( 
         <>
             <AnimatePresence mode="wait">
                 <motion.div
@@ -27,19 +33,12 @@ function Home() {
                         }
                     }}
                 >
-                    <div className="flex flex-col w-screen h-screen min-h-fit">
-                        <Navbar></Navbar>
-                        <div className="flex w-screen items-center justify-center min-h-fit flex-grow">    
-                            <HomePage/> 
-                        </div>
-                        <Navbar></Navbar>
+                    <div>
+                        <SkillSection title="Programming Languages" type={SkillTypes.LANGUAGE}/>
                     </div>
-
                 </motion.div>
             </AnimatePresence >
-                
-        </> 
-        
+        </>
         
     );
 }
