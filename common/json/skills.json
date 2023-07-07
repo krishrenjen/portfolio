@@ -3,12 +3,14 @@
         {
             "title":"Java",
             "description":"General, Android",
-            "image": "/SkillPageLogos/javalogo.png"
+            "image": "/SkillPageLogos/javalogo.png",
+            "level": -1
         },
         {
             "title":"Python",
             "description":"General, Flask",
-            "image": "/SkillPageLogos/pylogo.png"
+            "image": "/SkillPageLogos/pylogo.png",
+            "level": 100
         },
         {
             "title":"C#",
@@ -33,7 +35,7 @@
         {
             "title":"CSS3",
             "description":"Website Design",
-            "image": ""
+            "image": "/SkillPageLogos/css3logo.png"
         },
         {
             "title": "LuaU",
@@ -45,42 +47,42 @@
         {
             "title":"ReactJS",
             "description": "Website Development",
-            "image":""
+            "image":"/SkillPageLogos/reactlogo.png"
         },
         {
             "title":"NextJS",
             "description": "With ReactJS",
-            "image":""
+            "image":"/SkillPageLogos/nextjslogo.svg"
         },
         {
             "title":"Tailwind CSS",
             "description": "With ReactJS",
-            "image":""
+            "image":"/SkillPageLogos/tailwindlogo.png"
         },
         {
-            "title":"Android Studio",
+            "title":"Android",
             "description": "Small Apps",
-            "image":""
+            "image":"/SkillPageLogos/androidlogo.png"
         },
         {
             "title":"Flask",
             "description": "Small APIs",
-            "image":""
+            "image":"/SkillPageLogos/flasklogo.png"
         },
         {
             "title":"Firebase",
             "description": "Realtime and Firestore",
-            "image":""
+            "image":"/SkillPageLogos/firebaselogo.png"
         },
         {
             "title":"Unity",
             "description": "2D, 3D, and VR Games",
-            "image":""
+            "image":"/SkillPageLogos/unitylogo.png"
         },
         {
             "title":"Roblox Studio",
             "description": "Passion Games",
-            "image":""
+            "image":"/SkillPageLogos/robloxstudiologo.png"
         }
 
     ]

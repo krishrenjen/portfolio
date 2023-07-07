@@ -31,6 +31,7 @@ export default function SkillSection({title, type}: SkillSectionProps) {
                     key={index} 
                     info={item} 
                     grayedOut={hoveredCard !== null && hoveredCard != index}
+                    somethingSelected={hoveredCard != null}
                     onMouseEnter={() => handleCardHover(index)}
                     onMouseLeave={() => handleCardLeave()}
                 />
