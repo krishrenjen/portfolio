@@ -26,7 +26,7 @@ export default function SkillCard({info, grayedOut, onMouseEnter, onMouseLeave} 
     >
         <div className={"relative rounded-lg w-80 h-32 bg-dark-gray flex items-center" }>
           <div className="bg-light-dark-gray rounded-l-lg rounded-r-sm h-full w-32 flex items-center justify-center">
-            <img className={"w-full h-full px-3 py-3 " + (grayedOut ? "grayscale":"grayscale-0")} src={info.image}></img>
+            <img alt="" className={"w-full h-full px-3 py-3 " + (grayedOut ? "grayscale":"grayscale-0")} src={info.image}></img>
           </div>
           <div className="flex flex-col flex-grow">
             <h2 className={"text-2xl text-center font-medium font-title " + textColor}>{info.title}</h2> 
