@@ -17,6 +17,11 @@ module.exports = {
       },
       transitionDuration: {
         '2000': '2000ms',
+      },
+      colors:{
+        "dark-gray": "#101010",
+        "light-dark-gray": "#313131"
+
       }
     },
   },

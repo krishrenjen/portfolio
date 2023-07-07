@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import skills from "@/common/json/skills.json"
 import SkillCard from '../SkillCard/SkillCard';
 
@@ -11,13 +11,29 @@ interface SkillSectionProps{
 export default function SkillSection({title, type}: SkillSectionProps) {
 
     const data = skills[type as keyof typeof skills];
+    const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
+
+    const handleCardHover = (index: number) => {
+        setHoveredCard(index);
+    };
+    
+    const handleCardLeave = () => {
+        setHoveredCard(null);
+    };
+    
     return (
         <div>
             <h1>{title}</h1>
-            <div>
-                {data.map((item) => (
-                    <SkillCard info={item}/>
+            <div className="flex flex-row flex-wrap gap-3 items-center justify-center mx-72">
+                {data.map((item, index) => (
+                    <SkillCard
+                    key={index} 
+                    info={item} 
+                    grayedOut={hoveredCard !== null && hoveredCard != index}
+                    onMouseEnter={() => handleCardHover(index)}
+                    onMouseLeave={() => handleCardLeave()}
+                />
                 ))}
             </div>
         </div>
