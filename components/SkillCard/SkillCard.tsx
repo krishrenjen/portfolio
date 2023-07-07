@@ -28,14 +28,15 @@ export default function SkillCard({info, grayedOut, onMouseEnter, onMouseLeave} 
     >
         <div className={"relative rounded-lg w-80 h-32 bg-dark-gray flex items-center" }>
           <div className="bg-light-dark-gray rounded-l-lg rounded-r-sm h-full w-32 flex items-center justify-center">
-            <div className="relative w-80 h-32 mx-3 my-3">
-            <Image priority={true} alt="" fill={true} style={{objectFit:"contain"}} src={info.image}/>
+            <div className={"relative w-80 h-32 mx-3 my-3 " + (grayedOut ? "grayscale": "grayscale-0")}>
+              <Image priority={true} alt="" fill={true} style={{objectFit:"contain"}} src={info.image}/>
             </div>
           </div>
+          
 
           <div className="flex flex-col flex-grow">
             <h2 className={"text-2xl text-center font-medium font-title " + textColor}>{info.title}</h2> 
-            <p className={" text-center font-light"}>{info.description}</p>
+            <p className={" text-center font-light " + textColor}>{info.description}</p>
           </div>
         </div>
     </div>

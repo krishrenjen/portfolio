@@ -25,7 +25,7 @@ export default function SkillSection({title, type}: SkillSectionProps) {
     return (
         <div>
             <h1>{title}</h1>
-            <div className="flex flex-row flex-wrap gap-3 items-center justify-center mx-72">
+            <div className="flex flex-row flex-wrap gap-3 items-center justify-center px-72 md:justify-start">
                 {data.map((item, index) => (
                     <SkillCard
                     key={index} 
