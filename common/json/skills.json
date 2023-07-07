@@ -2,12 +2,12 @@
     "languages": [
         {
             "title":"Java",
-            "description":"Android Development",
+            "description":"General, Android",
             "image": "/SkillPageLogos/javalogo.png"
         },
         {
             "title":"Python",
-            "description":"Flask",
+            "description":"General, Flask",
             "image": "/SkillPageLogos/pylogo.png"
         },
         {
@@ -29,6 +29,59 @@
             "title":"HTML5",
             "description":"Website Design",
             "image": "/SkillPageLogos/htmllogo.png"
+        },
+        {
+            "title":"CSS3",
+            "description":"Website Design",
+            "image": ""
+        },
+        {
+            "title": "LuaU",
+            "description": "Roblox",
+            "image":"/SkillPageLogos/lualogo.png"
         }
+    ],
+    "frameworks":[
+        {
+            "title":"ReactJS",
+            "description": "Website Development",
+            "image":""
+        },
+        {
+            "title":"NextJS",
+            "description": "With ReactJS",
+            "image":""
+        },
+        {
+            "title":"Tailwind CSS",
+            "description": "With ReactJS",
+            "image":""
+        },
+        {
+            "title":"Android Studio",
+            "description": "Small Apps",
+            "image":""
+        },
+        {
+            "title":"Flask",
+            "description": "Small APIs",
+            "image":""
+        },
+        {
+            "title":"Firebase",
+            "description": "Realtime and Firestore",
+            "image":""
+        },
+        {
+            "title":"Unity",
+            "description": "2D, 3D, and VR Games",
+            "image":""
+        },
+        {
+            "title":"Roblox Studio",
+            "description": "Passion Games",
+            "image":""
+        }
+
     ]
 }

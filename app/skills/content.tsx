@@ -26,8 +26,9 @@ export default function Content() {
         >
             <div className="flex flex-col w-screen min-h-screen">
                     <Navbar></Navbar>
-                    <div className="flex w-screen  justify-center min-h-fit flex-grow">    
+                    <div className="flex flex-col w-screen items-center min-h-fit flex-grow">    
                         <SkillSection title="Programming Languages" type={SkillTypes.LANGUAGE}/> 
+                        <SkillSection title="Tools & Frameworks" type={SkillTypes.FRAMEWORK}/> 
                     </div>
                     <Navbar></Navbar>
                 </div>
