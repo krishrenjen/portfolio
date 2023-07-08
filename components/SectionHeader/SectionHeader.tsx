@@ -45,7 +45,7 @@ export default function SectionHeader({text, gradient} : SectionHeaderProps) {
         <div>
             <h1 className="text-5xl flex font-title font-medium justify-center items-center mb-5 gap-3">
                 {wordArray.map((item, index) => (
-                    (item == "&") ? <span className={"text-7xl text-transparent bg-clip-text " + gradient}>{item}</span> : <span>{item}</span>
+                    (item == "&") ? <span key={index} className={"text-7xl text-transparent bg-clip-text " + gradient}>{item}</span> : <span key={index}>{item}</span>
                 ))}
             </h1>
         </div>
