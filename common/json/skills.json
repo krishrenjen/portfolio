@@ -4,85 +4,99 @@
             "title":"Java",
             "description":"General, Android",
             "image": "/SkillPageLogos/javalogo.png",
-            "level": -1
+            "level": 3
         },
         {
             "title":"Python",
             "description":"General, Flask",
             "image": "/SkillPageLogos/pylogo.png",
-            "level": 100
+            "level": 3
         },
         {
             "title":"C#",
             "description":"Unity",
-            "image": "/SkillPageLogos/csharplogo.png"
+            "image": "/SkillPageLogos/csharplogo.png",
+            "level": 2
         },
         {
             "title":"JavaScript",
             "description":"Web Development",
-            "image": "/SkillPageLogos/javascriptlogo.png"
+            "image": "/SkillPageLogos/javascriptlogo.png",
+            "level": 3
         },
         {
             "title":"TypeScript",
             "description":"React Development",
-            "image": "/SkillPageLogos/typescriptlogo.png"
+            "image": "/SkillPageLogos/typescriptlogo.png",
+            "level": 3
         },
         {
             "title":"HTML5",
             "description":"Website Design",
-            "image": "/SkillPageLogos/htmllogo.png"
+            "image": "/SkillPageLogos/htmllogo.png",
+            "level": 4
         },
         {
             "title":"CSS3",
             "description":"Website Design",
-            "image": "/SkillPageLogos/css3logo.png"
+            "image": "/SkillPageLogos/css3logo.png",
+            "level": 3
         },
         {
             "title": "LuaU",
             "description": "Roblox",
-            "image":"/SkillPageLogos/lualogo.png"
+            "image":"/SkillPageLogos/lualogo.png",
+            "level": 2
         }
     ],
     "frameworks":[
         {
             "title":"ReactJS",
             "description": "Website Development",
-            "image":"/SkillPageLogos/reactlogo.png"
+            "image":"/SkillPageLogos/reactlogo.png",
+            "level": 3
         },
         {
             "title":"NextJS",
             "description": "With ReactJS",
-            "image":"/SkillPageLogos/nextjslogo.svg"
+            "image":"/SkillPageLogos/nextjslogo.svg",
+            "level": 3
         },
         {
             "title":"Tailwind CSS",
             "description": "With ReactJS",
-            "image":"/SkillPageLogos/tailwindlogo.png"
+            "image":"/SkillPageLogos/tailwindlogo.png",
+            "level": 3
         },
         {
             "title":"Android",
             "description": "Small Apps",
-            "image":"/SkillPageLogos/androidlogo.png"
+            "image":"/SkillPageLogos/androidlogo.png",
+            "level": 3
         },
         {
             "title":"Flask",
             "description": "Small APIs",
-            "image":"/SkillPageLogos/flasklogo.png"
+            "image":"/SkillPageLogos/flasklogo.png",
+            "level": 2
         },
         {
             "title":"Firebase",
             "description": "Realtime and Firestore",
-            "image":"/SkillPageLogos/firebaselogo.png"
+            "image":"/SkillPageLogos/firebaselogo.png",
+            "level": 2
         },
         {
             "title":"Unity",
             "description": "2D, 3D, and VR Games",
-            "image":"/SkillPageLogos/unitylogo.png"
+            "image":"/SkillPageLogos/unitylogo.png",
+            "level": 3
         },
         {
             "title":"Roblox Studio",
             "description": "Passion Games",
-            "image":"/SkillPageLogos/robloxstudiologo.png"
+            "image":"/SkillPageLogos/robloxstudiologo.png",
+            "level": 2
         }
 
     ]
