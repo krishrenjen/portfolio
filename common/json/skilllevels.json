@@ -1,0 +1,32 @@
+[
+    {
+        "letter":"N",
+        "title": "Novice",
+        "backgroundColor": "#bd52ff",
+        "textColor": "#FFFFFF"
+    },
+    {
+        "letter":"AB",
+        "title": "Advanced Beginner",
+        "backgroundColor": "#9f14f5",
+        "textColor": "#FFFFFF"
+    },
+    {
+        "letter":"C",
+        "title": "Competent",
+        "backgroundColor": "#770bba",
+        "textColor": "#FFFFFF"
+    },
+    {
+        "letter":"P",
+        "title": "Proficient",
+        "backgroundColor": "#470470",
+        "textColor": "#FFFFFF"
+    },
+    {
+        "letter":"E",
+        "title": "Expert",
+        "backgroundColor": "#25023b",
+        "textColor": "#FFFFFF"
+    }
+]

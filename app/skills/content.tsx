@@ -4,8 +4,10 @@ import SkillSection from "@/components/SkillSection/SkillSection";
 import { SkillTypes } from "@/common/enums/skilltypes";
 import { AnimatePresence, motion } from "framer-motion";
 import Navbar from '@/components/Navbar/Navbar';
+import SkillLevelBar from '@/components/SkillLevelBar/SkillLevelBar';
 
 export default function Content() {
+    const gradient = "bg-gradient-to-r from-pink-400 to-purple-600"
   return (
     <AnimatePresence mode="wait">
         <motion.div
@@ -26,8 +28,32 @@ export default function Content() {
         >
             <div className="flex flex-col w-screen min-h-screen">
                     <Navbar></Navbar>
-                    <div className="flex w-screen  justify-center min-h-fit flex-grow">    
-                        <SkillSection title="Programming Languages" type={SkillTypes.LANGUAGE}/> 
+                    <motion.div
+                        key="page"
+                        initial="initialState"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{
+                            duration: 1,
+                        }}
+                        variants={{
+                            initialState:{
+                                y: 30
+                            },
+                            visible:{
+                                y: 0
+                            }
+                        }}
+                    >
+                        <h1 className={"font-title font-semibold text-8xl text-center mb-10 text-transparent bg-clip-text " + gradient}>Skills</h1>
+                    </motion.div>
+                    <div className="flex flex-col w-screen items-center min-h-fit flex-grow gap-16">    
+                        <SkillSection title="Programming & Markup Languages" type={SkillTypes.LANGUAGE} gradient={gradient}/> 
+                        <SkillSection title="Tools & Frameworks" type={SkillTypes.FRAMEWORK} gradient={gradient}/> 
+                        
+                        <div id="skilllevels">
+                            <SkillLevelBar/>
+                        </div>
                     </div>
                     <Navbar></Navbar>
                 </div>

@@ -9,11 +9,11 @@ export default function NameHeader() {
     const headers = [
         {
             content: "High", 
-            gradient: "bg-gradient-to-r from-pink-400 to-purple-600",
+            gradient: "bg-gradient-to-r from-pink-500 to-yellow-500",
         },
         {
             content: "School", 
-            gradient: "bg-gradient-to-r from-pink-500 to-yellow-500",
+            gradient: "bg-gradient-to-r from-pink-400 to-purple-600",
         },
         {
             content: "Developer", 
