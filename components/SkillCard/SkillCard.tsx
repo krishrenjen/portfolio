@@ -25,7 +25,7 @@ export default function SkillCard({info, grayedOut, somethingSelected, onMouseEn
   const textColorMain:string = ((grayedOut) ? "text-gray-400" : "text-white")
 
   const level = ((info.level != null) ? info.level : 1)
-  const data:SkillLevelInfo | undefined = SkillLevels[level-1] ?? SkillLevels[(level < 0) ? 0 : SkillLevels.length - 1]
+  const data:SkillLevelInfo | undefined = SkillLevels[level-1] ?? SkillLevels[(level <= 0) ? 0 : SkillLevels.length - 1]
   
   
   return (

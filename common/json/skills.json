@@ -68,6 +68,13 @@
             "image":"/SkillPageLogos/tailwindlogo.png",
             "level": 3
         },
+        
+        {
+            "title":"Node.js",
+            "description": "General Use",
+            "image":"/SkillPageLogos/nodejslogo.png",
+            "level": 2
+        },
         {
             "title":"Android",
             "description": "Small Apps",
@@ -79,6 +86,18 @@
             "description": "Small APIs",
             "image":"/SkillPageLogos/flasklogo.png",
             "level": 2
+        },
+        {
+            "title":"discord.py",
+            "description": "Personal Bots",
+            "image":"/SkillPageLogos/discordpylogo.png",
+            "level": 2
+        },
+        {
+            "title":"discord.js",
+            "description": "School Projects",
+            "image":"/SkillPageLogos/discordjslogo.png",
+            "level": 1
         },
         {
             "title":"Firebase",
@@ -98,6 +117,19 @@
             "image":"/SkillPageLogos/robloxstudiologo.png",
             "level": 2
         }
-
+    ],
+    "external":[
+        {
+            "title":"Microsoft 360",
+            "description":"",
+            "image":"",
+            "level":0
+        },
+        {
+            "title":"Blender",
+            "description":"",
+            "image":"",
+            "level":0
+        }
     ]
 }
