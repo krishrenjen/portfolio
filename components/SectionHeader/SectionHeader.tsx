@@ -22,7 +22,9 @@ interface SectionHeaderProps{
 //                     }}
 
 export default function SectionHeader({text, gradient} : SectionHeaderProps) {
-    const wordArray = text.split(/(?=[&])|(?<=[&])/g);
+    const wordArray = text.split("&")
+    const wordArray2 = wordArray.flatMap((element, index) => (index !== wordArray.length - 1) ? [element, "&"] : [element]);
+   
 
     return (
     <motion.div
@@ -44,7 +46,7 @@ export default function SectionHeader({text, gradient} : SectionHeaderProps) {
     >
         <div>
             <h1 className="text-5xl flex font-title font-medium justify-center items-center mb-5 gap-3">
-                {wordArray.map((item, index) => (
+                {wordArray2.map((item, index) => (
                     (item == "&") ? <span key={index} className={"text-7xl text-transparent bg-clip-text " + gradient}>{item}</span> : <span key={index}>{item}</span>
                 ))}
             </h1>
