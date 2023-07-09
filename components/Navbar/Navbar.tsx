@@ -24,9 +24,9 @@ export default function Navbar() {
       
       <ul className={(showNav ? "right-8" : "-right-full") + " md:static fixed top-16 md:flex md:gap-7 items-center text-white bg-dark-gray md:bg-transparent rounded-lg py-3 px-2"}>
         <NavItem content={"Home"} href="/"/>
-        <NavItem content={"Projects"} href="/projects"/>
+        <NavItem content={"Experience"} href="/experience"/>
         <NavItem content={"Skills"} href="/skills"/>
-        <NavItem content={"Blog"} href="/blog/list"/>
+        <NavItem content={"Blog"} href="/blog"/>
         <NavItem content={"Resume"} href="/resume"/>
         <NavItem content={"Contact"} href="/contact"/>
       </ul>
