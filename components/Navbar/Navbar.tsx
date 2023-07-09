@@ -1,9 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Image from 'next/image'
+import NavItem from './NavItem'
+import Link from 'next/link'
+import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
+
+// flex justify-between items-center gap-7 text-white p-2
 
 export default function Navbar() {
+
+  const [showNav, setShowNav] = useState(false);
+
   return (
-    <div className="h-10">
-      <nav className="hello">hello</nav>
-    </div>
+    <nav className="px-6 h-16 md:flex justify-between items-center bg-dark-gray sticky top-0 z-50 backdrop-filter backdrop-blur-lg bg-opacity-30">
+      <div className="flex items-center justify-between h-16">
+        <Link className="relative h-10 w-10" href="/">
+          <Image priority={true} alt="" fill={true} style={{objectFit:"contain"}} src={"/Images/logo.png"}/>
+        </Link>
+        {showNav ? <AiOutlineClose onClick={() => setShowNav(!showNav)} className="md:hidden block w-10 h-10 p-2 cursor-pointer"/> : <AiOutlineMenu onClick={() => setShowNav(!showNav)} className="md:hidden block w-10 h-10 p-2 cursor-pointer"/>}
+        
+      </div>
+      
+        
+      
+      <ul className={(showNav ? "right-8" : "-right-full") + " md:static fixed top-16 md:flex md:gap-7 items-center text-white bg-dark-gray md:bg-transparent rounded-lg py-3 px-2"}>
+        <NavItem content={"Home"} href="/"/>
+        <NavItem content={"Projects"} href="/projects"/>
+        <NavItem content={"Skills"} href="/skills"/>
+        <NavItem content={"Blog"} href="/blog/list"/>
+        <NavItem content={"Resume"} href="/resume"/>
+        <NavItem content={"Contact"} href="/contact"/>
+      </ul>
+      
+    </nav>
   )
 }

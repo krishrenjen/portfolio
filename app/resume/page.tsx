@@ -1,12 +1,11 @@
 import Content from "./content";
 
-
 export const metadata = {
-    title: 'Krish Renjen | Skills',
-    description: 'Krish Renjen - Skills',
-}
+    title: 'Krish Renjen | Resume',
+    description: 'Krish Renjen - Resume',
+  }
 
-function Skills() {
+function Home() {
 
     return ( 
         <>
@@ -16,4 +15,4 @@ function Skills() {
     );
 }
 
-export default Skills;
+export default Home;

@@ -17,6 +17,7 @@ interface SkillCardProps {
     somethingSelected:boolean,
     onMouseEnter: () => void;
     onMouseLeave: () => void;
+
 }
 
 
@@ -24,13 +25,13 @@ export default function SkillCard({info, grayedOut, somethingSelected, onMouseEn
   const textColorMain:string = ((grayedOut) ? "text-gray-400" : "text-white")
 
   const level = ((info.level != null) ? info.level : 1)
-  const data:SkillLevelInfo | undefined = SkillLevels[level-1] ?? SkillLevels[(level < 0) ? 0 : SkillLevels.length - 1]
+  const data:SkillLevelInfo | undefined = SkillLevels[level-1] ?? SkillLevels[(level <= 0) ? 0 : SkillLevels.length - 1]
   
   
   return (
     <div 
       onMouseEnter={onMouseEnter} 
-      onMouseLeave={onMouseLeave}  
+      onMouseLeave={onMouseLeave}
       className={"group relative w-80 h-32 drop-shadow-md transition-all duration-200 hover:scale-125 hover:-rotate-6 " + (grayedOut ? "z-0":"z-10") + ((!grayedOut && !somethingSelected) ? " grayscale-[75%]" : "")}
     >
         <div className={"relative rounded-lg w-80 h-32 bg-dark-gray flex items-center" }>

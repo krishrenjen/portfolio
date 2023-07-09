@@ -8,9 +8,10 @@ interface SkillSectionProps{
     title:string,
     type: string,
     gradient: string,
+    delimiter?: string,
 }
 
-export default function SkillSection({title, type, gradient}: SkillSectionProps) {
+export default function SkillSection({title, type, gradient, delimiter}: SkillSectionProps) {
 
     const data = skills[type as keyof typeof skills];
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -25,10 +26,10 @@ export default function SkillSection({title, type, gradient}: SkillSectionProps)
     };
     
     return (
-        <div>
-            <SectionHeader text={title} gradient={gradient}/>
-            <hr className="opacity-20 mb-12 mx-96"></hr>
-            <div className="flex flex-row flex-wrap gap-3 items-center justify-center mx-auto px-40 h-fit">
+        <div className='w-full'>
+            <SectionHeader text={title} gradient={gradient} delimiter={delimiter}/>
+            <hr className="opacity-20 mb-12 mx-[20%]"></hr>
+            <div className="flex flex-row flex-wrap gap-3 items-center justify-center mx-[15%] h-fit">
                 {data.map((item, index) => (
                     <SkillCard
                     key={index} 
@@ -40,7 +41,7 @@ export default function SkillSection({title, type, gradient}: SkillSectionProps)
                 />
                 ))}
             </div>
-            <hr className="opacity-20 mx-96 mt-12"></hr>
+            <hr className="opacity-20 mt-12 mx-[20%]"></hr>
         </div>
     )
 }
