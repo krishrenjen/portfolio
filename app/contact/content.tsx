@@ -44,7 +44,7 @@ export default function Content() {
                                     }
                                 }}
                             >
-                                <h1 className={"font-title font-semibold text-8xl text-center mb-10 py-3 text-transparent bg-clip-text " + gradient}>Contact</h1>
+                                <h1 className="flex w-full justify-center items-center"><span className={"font-title font-semibold text-8xl text-center mb-10 py-3 text-transparent bg-clip-text " + gradient}>Contact</span></h1>
                             </motion.div>
                             <div className="flex flex-col w-full items-center min-h-fit flex-grow gap-16 mb-12 justify-center">    
                                 <h1 className="flex h-96">hi</h1>

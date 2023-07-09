@@ -47,7 +47,7 @@ export default function Content() {
                                 }
                             }}
                         >
-                            <h1 className={"font-title font-semibold text-8xl text-center mb-10 py-3 text-transparent bg-clip-text " + gradient}>Skills</h1>
+                            <h1 className="flex w-full justify-center items-center"><span className={"font-title font-semibold text-8xl text-center mb-10 py-3 text-transparent bg-clip-text " + gradient}>Skills</span></h1>
                         </motion.div>
                         <div className="flex flex-col w-full items-center min-h-fit flex-grow gap-16 mb-12 overflow-hidden justify-center">    
                             <SkillSection title="Programming & Markup Languages" type={SkillTypes.LANGUAGE} gradient={gradient}/> 
