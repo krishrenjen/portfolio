@@ -84,7 +84,7 @@ export default function Content() {
 
                                 </div>
                                 <div className="relative w-full h-[60rem]">
-                                    <Image priority={true} alt="" fill={true} style={{objectFit:"contain"}} src={"/resume/Resume.png"}/>
+                                    <Image priority={true} alt="" fill={true} style={{objectFit:"contain"}} src={"/resume/Resume1.png"}/>
                                 </div>    
                             
                             </div>
