@@ -1,8 +1,8 @@
 import Content from "./content";
 
 export const metadata = {
-    title: 'Krish Renjen | Resume',
-    description: 'Krish Renjen - Resume',
+    title: 'Krish Renjen | Blog',
+    description: 'Krish Renjen - Blog',
   }
 
 function Home() {
