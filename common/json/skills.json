@@ -120,15 +120,15 @@
     ],
     "external":[
         {
-            "title":"Microsoft 360",
-            "description":"",
-            "image":"",
+            "title":"Microsoft 365",
+            "description":"Word, Excel",
+            "image":"/SkillPageLogos/officelogo.png",
             "level":0
         },
         {
             "title":"Blender",
-            "description":"",
-            "image":"",
+            "description":"Small Renders",
+            "image":"/SkillPageLogos/blenderlogo.png",
             "level":0
         }
     ]

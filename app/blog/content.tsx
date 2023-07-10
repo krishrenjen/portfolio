@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import React from 'react'
 
 export default function Content() {
-    const gradient = "bg-gradient-to-r from-pink-500 to-yellow-500"
+    const gradient = "bg-gradient-to-r from-blue-400 to-green-600"
     return (
         <>
             <div className=" w-full min-h-screen">
@@ -44,10 +44,10 @@ export default function Content() {
                                     }
                                 }}
                             >
-                                <h1 className="flex w-full justify-center items-center"><span className={"font-title font-semibold text-8xl text-center mb-10 py-3 text-transparent bg-clip-text " + gradient}>Projects</span></h1>
+                                <h1 className="flex w-full justify-center items-center"><span className={"font-title font-semibold text-8xl text-center mb-10 py-3 text-transparent bg-clip-text " + gradient}>Blog</span></h1>
                             </motion.div>
                             <div className="flex flex-col w-full items-center min-h-fit flex-grow gap-16 mb-12 justify-center">    
-                                <h1 className="flex h-96">hi</h1>
+                                <h1 className="flex h-96">Coming Soon</h1>
                             </div>
                         </motion.div>
                     </AnimatePresence >

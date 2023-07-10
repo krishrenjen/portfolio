@@ -24,8 +24,8 @@ export default function NameHeader() {
 
     const buttons = [
         {
-            content: "Projects",
-            href: "/projects",
+            content: "Experience",
+            href: "/experience",
             gOverride: ""
         },
         {
@@ -35,7 +35,7 @@ export default function NameHeader() {
         },
         {
             content: "Blog",
-            href: "/blog/list",
+            href: "/blog",
             gOverride: ""
         },
         {
