@@ -7,7 +7,7 @@ import { AnimatePresence, motion } from "framer-motion";
 function Home() {
     return (
         <>
-         <div className="flex flex-col w-screen h-screen min-h-fit">
+         <div className="flex flex-col w-screen h-screen min-h-fit gap-10">
             <Navbar></Navbar>       
             <div className="flex w-screen items-center justify-center min-h-fit flex-grow">
                 <AnimatePresence mode="wait">
