@@ -66,7 +66,7 @@ export default function NameHeader() {
       }, [headers.length]);
 
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col w-screen">
             
             <div className={HomePageCSS.floatheader}>
                 <h1 className="text-6xl flex font-title font-medium justify-center mb-5">Krish Renjen</h1>
@@ -80,7 +80,7 @@ export default function NameHeader() {
             
             
             
-            <div className="flex flex-row flex-wrap relative w-full gap-10 justify-center mt-20">
+            <div className="flex flex-row flex-wrap  w-full gap-10 justify-center items-center mt-20 px-[10%]">
 
                 {buttons.map((item, index) => (
                     <GradientButton key={index} gradient={(item.gOverride == "" || item.gOverride == null) ? (headers.at(index % headers.length)?.gradient || "") : item.gOverride} content={item.content} href={item.href}></GradientButton>

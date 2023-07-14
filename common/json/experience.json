@@ -26,7 +26,7 @@
             "date": "JULY 2023",
             "primaryHref": "https://krishrenjen.vercel.app/",
             "links": [
-                {"text": "GitHub", "href": "https://github.com/krishrenjen/portfolio"}
+                {"text": "GitHub Repository", "href": "https://github.com/krishrenjen/portfolio"}
             ],
             "tags":[
                 {"title": "Personal"},
@@ -36,6 +36,85 @@
                 {"title": "React.js", "type":"Tool"},
                 {"title": "TailwindCSS", "type":"Tool"},
                 {"title": "Vercel", "type":"Tool"} 
+            ]
+        },
+        {
+            "title":"Circlize App",
+            "description":"Final project for mobile application class\nAn Android app that allows users to create or join Circles, in which they can then post messages to the stream. Additionally, they can change their username, and profile pictures. Features a login and signup screen as well.\nConnected to Flask server through an API, which would then connect to the Firebase database to write and read data.",
+            "date": "JUNE 2023",
+            "primaryHref": "/noresource",
+            "links": [
+                {"text": "GitHub Repository", "href": "/noresource"}
+            ],
+            "tags":[
+                {"title": "School"},
+                {"title": "Java", "type":"Language"},
+                {"title": "Android Studio", "type":"Tool"},
+                {"title": "Python", "type":"Language"},
+                {"title": "Flask", "type":"Tool"},
+                {"title": "Firebase", "type":"Tool"}
+            ]
+        },
+        {
+            "title":"Weather App",
+            "description":"Project in mobile application class\nDeveloped an Android weather app that utilized the OpenWeather API to display weather information. Design inspired by the Apple weather app.",
+            "date": "January 2023",
+            "primaryHref": "https://drive.google.com/file/d/1St4PNV4kq08qbGj35996Z6zBJxuZtf3A/view?usp=sharing",
+            "links": [
+                {"text": "GitHub Repository", "href": "https://github.com/krishrenjen/crystal_weather"},
+                {"text": "MainActivity.java","href": "https://github.com/krishrenjen/crystal_weather/blob/master/app/src/main/java/com/example/crystalweather/MainActivity.java"}
+            ],
+            "tags":[
+                {"title": "School"},
+                {"title": "Java", "type":"Language"},
+                {"title": "Android Studio", "type":"Tool"},
+                {"title": "OpenWeather", "type":"Tool"}
+            ]
+        },
+        {
+            "title":"Aternos Discord Bot",
+            "description":"Developed a Discord bot to view status of Aternos Minecraft servers. While Aternos does not have a public API, I used a libray that would use web-scraping in order to gather information. Additionally, it would be able to start, stop, or restart the server, all from Discord. It was then deployed on Heroku.",
+            "date": "AUGUST 2022",
+            "primaryHref": "https://imgur.com/a/6o1Vexj",
+            "links": [
+                {"text": "GitHub Repository", "href": "https://github.com/krishrenjen/aternos-bot"},
+                {"text": "Aternos", "href": "https://aternos.org/:en/"}
+            ],
+            "tags":[
+                {"title": "Personal"},
+                {"title": "Python", "type":"Language"},
+                {"title": "discord.py", "type":"Tool"},
+                {"title": "Heroku", "type":"Tool"}
+            ]
+        },
+        {
+            "title":"Hypixel Discord Bot",
+            "description":"Developed a Discord bot for the Minecraft server Hypixel using discord.py and storing past connections in a Firebase realtime database.\nUsers could link their Hypixel account by adding their Discord to their Hypixel profile in-game and leveraging the API, the Discord bot can view those connections. Utilized async functions to wait for user response.",
+            "date": "JUNE 2021",
+            "primaryHref": "https://imgur.com/a/qZI13xY",
+            "links": [
+                {"text": "GitHub Repository", "href": "https://github.com/krishrenjen/hypixeldiscordbot"},
+                {"text": "What is a Discord bot?", "href": "https://www.guru.com/blog/how-does-a-discord-bot-work/"}
+            ],
+            "tags":[
+                {"title": "Personal"},
+                {"title": "Python", "type":"Language"},
+                {"title": "discord.py", "type":"Tool"},
+                {"title": "Firebase", "type":"Tool"}
+            ]
+        },
+        {
+            "title":"Java Calculator",
+            "description":"After finishing Introduction to Computer Science in 9th grade, I learned how to use regular expressions to create an in-line calculator that supports PEMDAS without exponents. While it is inefficient, it was one of my first complete Java projects alone.",
+            "date": "JUNE 2021",
+            "primaryHref": "https://replit.com/@krishrenjen/Calculator-Demo#",
+            "links": [
+                {"text": "GitHub Repository", "href": "https://github.com/krishrenjen/calculator"}
+            ],
+            "tags":[
+                {"title": "Personal"},
+                {"title": "Java", "type":"Language"},
+                {"title": "Command Line", "type":"Tool"}
             ]
         }
     ]
