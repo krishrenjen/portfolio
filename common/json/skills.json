@@ -130,6 +130,24 @@
             "description":"Small Renders",
             "image":"/SkillPageLogos/blenderlogo.png",
             "level":0
+        },
+        {
+            "title":"Google Drive",
+            "description":"Docs, Sheets, Slides, etc.",
+            "image":"/SkillPageLogos/drivelogo.png",
+            "level":3
+        },
+        {
+            "title":"Notion",
+            "description":"Organization",
+            "image":"/SkillPageLogos/notionlogo.png",
+            "level":4
+        },
+        {
+            "title":"Gitbook",
+            "description":"Creating Lessons",
+            "image":"/SkillPageLogos/gitbooklogo.png",
+            "level":2
         }
     ]
 }
