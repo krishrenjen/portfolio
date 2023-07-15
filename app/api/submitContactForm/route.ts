@@ -10,7 +10,7 @@ const headers = {
 }
 const DATABASE_ID = process.env.NOTION_CONTACT_DATABASE_ID
 
-export async function POST(request: NextResponse){
+export async function POST(request: Request){
 
     try{
         const req = await request.json();
