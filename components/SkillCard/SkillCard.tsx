@@ -13,6 +13,7 @@ interface SkillCardProps {
         image: string;
         level?: number;
     };
+    priorityImage?: boolean;
     grayedOut:boolean;
     somethingSelected:boolean,
     onMouseEnter: () => void;
@@ -21,7 +22,14 @@ interface SkillCardProps {
 }
 
 
-export default function SkillCard({info, grayedOut, somethingSelected, onMouseEnter, onMouseLeave} : SkillCardProps) {
+export default React.memo(function SkillCard({
+  info,
+  grayedOut,
+  somethingSelected,
+  priorityImage,
+  onMouseEnter,
+  onMouseLeave,
+}: SkillCardProps) {
   const textColorMain:string = ((grayedOut) ? "text-gray-400" : "text-white")
 
   const level = ((info.level != null) ? info.level : 1)
@@ -37,7 +45,7 @@ export default function SkillCard({info, grayedOut, somethingSelected, onMouseEn
         <div className={"relative rounded-lg w-80 h-32 bg-dark-gray flex items-center" }>
           <div className="bg-light-dark-gray rounded-l-lg rounded-r-sm h-full w-32 flex items-center justify-center">
             <div className={"relative w-28 h-28 " + (grayedOut ? "grayscale": "grayscale-0")}>
-            <Image priority={true} alt="" fill={true} style={{objectFit:"contain"}} src={info.image}/>
+            <Image quality={40} priority={priorityImage ?? false} alt="" fill={true} style={{objectFit:"contain"}} src={info.image}/>
             </div>
           </div>
           
@@ -54,4 +62,4 @@ export default function SkillCard({info, grayedOut, somethingSelected, onMouseEn
         </div>
     </div>
   )
-}
+});
