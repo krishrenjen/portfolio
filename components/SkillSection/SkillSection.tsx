@@ -9,9 +9,10 @@ interface SkillSectionProps{
     type: string,
     gradient: string,
     delimiter?: string,
+    priorityImages?: boolean;
 }
 
-export default function SkillSection({title, type, gradient, delimiter}: SkillSectionProps) {
+export default function SkillSection({title, type, gradient, priorityImages, delimiter}: SkillSectionProps) {
 
     const data = skills[type as keyof typeof skills];
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
@@ -33,7 +34,8 @@ export default function SkillSection({title, type, gradient, delimiter}: SkillSe
                 {data.map((item, index) => (
                     <SkillCard
                     key={index} 
-                    info={item} 
+                    info={item}
+                    priorityImage={priorityImages ?? false} 
                     grayedOut={hoveredCard !== null && hoveredCard != index}
                     somethingSelected={hoveredCard != null}
                     onMouseEnter={() => handleCardHover(index)}

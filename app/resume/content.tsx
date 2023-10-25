@@ -84,10 +84,10 @@ export default function Content() {
 
                                 </div>
                                 <div className="relative w-full h-[60rem]">
-                                    <Image priority={true} alt="" fill={true} style={{objectFit:"contain"}} src={"/resume/Resume2.png"}/>
+                                    <Image priority={true} alt="" fill={true} style={{objectFit:"contain"}} src={"/resume/Resume3.png"}/>
                                 </div>
                                 <div>
-                                    <h1 className="font-title font-light italic">Last Updated - July 9, 2023</h1>
+                                    <h1 className="font-title font-light italic">Last Updated - October 13, 2023</h1>
                                 </div>    
                             
                             </div>
